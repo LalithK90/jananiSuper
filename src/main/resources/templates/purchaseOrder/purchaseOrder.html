@@ -94,7 +94,7 @@
     <!--script include-->
     <div data-th-replace="~{fragments/script :: scriptFragment}" ></div >
 
-<script >
+<script data-th-if="${ #lists.isEmpty(purchaseOrders)}" >
     /*active boostrap alert - start*/
     $(".alert").alert();
     /*active boostrap alert - end*/
